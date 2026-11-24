@@ -1,0 +1,70 @@
+.navbar {
+    background: #db2777;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar a:hover{
+    padding: 10px;
+    border-radius: 15px;
+    background: pink;
+    color: #db2777;
+    padding: 3px 8px;
+    border-radius: 30px;
+}
+
+.container{
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: #db2777;
+    color: white;
+    outline: none;
+    border: 1px solid pink;
+}
+
+button:hover {
+    background: pink;
+    color: #db2777;
+}
+
+.tasks{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.tasks-card {
+    background: pink;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .tasks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* HP */
+@media (max-width: 600px) {
+  .tasks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
